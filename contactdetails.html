@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="viraj">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale-1">
+		<title>Viraj Industries</title>
+		
+		<!--favicon -->
+		<link rel="apple-touch-icon" sizes="57x57" href="favicon/apple-icon-57x57.png">
+		<link rel="apple-touch-icon" sizes="60x60" href="favicon/apple-icon-60x60.png">
+		<link rel="apple-touch-icon" sizes="72x72" href="favicon/apple-icon-72x72.png">
+		<link rel="apple-touch-icon" sizes="76x76" href="favicon/apple-icon-76x76.png">
+		<link rel="apple-touch-icon" sizes="114x114" href="favicon/apple-icon-114x114.png">
+		<link rel="apple-touch-icon" sizes="120x120" href="favicon/apple-icon-120x120.png">
+		<link rel="apple-touch-icon" sizes="144x144" href="favicon/apple-icon-144x144.png">
+		<link rel="apple-touch-icon" sizes="152x152" href="favicon/apple-icon-152x152.png">
+		<link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-icon-180x180.png">
+		<link rel="icon" type="image/png" sizes="192x192"  href="favicon/android-icon-192x192.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="96x96" href="favicon/favicon-96x96.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+		<link rel="manifest" href="favicon/manifest.json">
+		<meta name="msapplication-TileColor" content="#ffffff">
+		<meta name="msapplication-TileImage" content="favicon/ms-icon-144x144.png">
+		<meta name="theme-color" content="#ffffff">
+			
+		
+		<link rel="stylesheet" 
+        href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" 
+        integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" 
+        crossorigin="anonymous">
+		<link rel="stylesheet" href="css/style.css">
+	</head>
+	<body>
+		<div class="container">
+			<nav class="navbar navbar-inverse  navbar-fixed-top nav-color" style="border-top: 5px solid #4285f5;box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
+			  <div class="container-fluid">
+				<div class="navbar-header">
+				  <a class="navbar-brand img-adjust appi" href="index.html"><img src="image/viraj.png"  class="logo-setting"></a>
+				  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span> 
+				  </button>
+				  
+				</div>
+				<div class="collapse navbar-collapse" id="myNavbar">
+				  <ul class="nav navbar-nav navbar-right">
+					<li class="appi" ><a href="index.html">Home</a></li>
+					<li class="appi" ><a href="productpage.html" >Products</a></li> 
+					<li class="appi" ><a href="enquiry.html" >Enquiry</a></li>
+					<li class="active appi"><a href="contactdetails.html" >Contact Us</a></li> 
+				  </ul>
+				</div>
+			  </div>
+			</nav>
+		</div>
+		<br>
+			<div ng-controller="contactCtrl as cont" >
+				<div class="container">
+					<div class="jumbotron jumb-bg-color">		
+						<div class="row">
+							<div class="col-sm-6 ">
+								<div id="googleMap1" style="height:300px;width:100%;border:3px solid #E1E0E0; border-radius:8px;box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);" class="img-responsive" ></div>
+							</div>
+							<div class="col-sm-6 shadow-font">
+									<h3><strong>{{cont.addr1.type}}</strong></h3><hr>
+									<h4>{{cont.addr1.area}}</h4>
+									<h4><strong>Email: </strong>{{cont.addr1.email}}</h4>
+									<h4><strong>Fax: </strong>{{cont.addr1.fax}}</h4>
+									<h4><strong>Mobile 1 : </strong>{{cont.addr1.mobile1}}</h4>
+									<h4><strong>Mobile 2 : </strong>{{cont.addr1.mobile2}}</h4>
+							</div>
+						</div>
+					</div>
+					<div class="jumbotron jumb-bg-color">	
+						<div class="row">
+							<div class="col-sm-6 ">
+								
+								<div id="googleMap2" style="height:300px;width:100%;border:3px solid #E1E0E0; border-radius:8px;box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);" class="img-responsive"  ></div>		
+															
+							</div>
+							<div class="col-sm-6 shadow-font">
+									<h3><strong>{{cont.addr2.type}}</strong></h3><hr>
+									<h4>{{cont.addr2.area}}</h4>
+									<h4><strong>Email: </strong>{{cont.addr2.email}}</h4>
+									<h4><strong>Fax: </strong>{{cont.addr2.fax}}</h4>
+									<h4><strong>Mobile 1 : </strong>{{cont.addr2.mobile1}}</h4>
+									<h4><strong>Mobile 2 : </strong>{{cont.addr2.mobile2}}</h4>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+				
+			</div>
+			
+			<footer class="container-fluid container-flu bg-4 text-center">
+				<div class="row">
+					<div class="col-xs-3">
+						<a href="http://basavarajkoni-cv.surge.sh"  target="_blank" style="color:black;text-decoration:none"><h5>By:Basavaraj Koni</h5></a>
+					</div>
+					<div class="col-xs-3">
+						<h5><strong>Page Views: </strong><span class="counter badge" id="count"></span></h5>
+					</div>
+					<div class="col-xs-3">
+						<h5>&copy; 2016 Viraj Industries</h5>
+					</div>
+					<div class="col-xs-3">
+						<h5>All Rights Reserved</h5>
+					</div>
+				</div>
+			</footer>
+						
+		<!-- third party js -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.0-rc.2/angular.min.js"></script>
+    <script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+ 
+    <!-- Our application scripts -->
+ 	<script  src="js/app.js"></script>
+	<script  src="js/counter.js"></script>
+	
+	<script  src="js/controller/contact.js"></script>
+	
+	<script  src="js/factories/dataservice.js"></script>
+	
+	
+	
+	<script src="http://maps.googleapis.com/maps/api/js"></script>
+<script>
+var myCenter1 = new google.maps.LatLng(15.808479, 74.486612);
+
+function initialize() {
+var mapProp = {
+  center:myCenter1,
+  zoom:12,
+  scrollwheel:false,
+  draggable:false,
+  mapTypeId:google.maps.MapTypeId.ROADMAP
+  };
+
+var map = new google.maps.Map(document.getElementById("googleMap1"),mapProp);
+
+var marker = new google.maps.Marker({
+  position:myCenter1,
+  });
+
+marker.setMap(map);
+}
+
+google.maps.event.addDomListener(window, 'load', initialize);
+</script>
+
+
+<script>
+var myCenter2 = new google.maps.LatLng(15.788836, 74.472286);
+function initialize() {
+var mapProp = {
+  center:myCenter2,
+  zoom:12,
+  scrollwheel:false,
+  draggable:false,
+  mapTypeId:google.maps.MapTypeId.ROADMAP
+  };
+
+var map = new google.maps.Map(document.getElementById("googleMap2"),mapProp);
+
+var marker = new google.maps.Marker({
+  position:myCenter2,
+  });
+
+marker.setMap(map);
+}
+
+google.maps.event.addDomListener(window, 'load', initialize);
+</script>
+
+
+	</body>
+</html>
